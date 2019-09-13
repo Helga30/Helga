@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(https://avatanplus.com/files/resources/original/575179fc86d2615516448288.jpg);
+ 
+}
+
+.container {
+	position: relative;
+	margin: 300px auto;
+	width: 300px;
+	height: 300px;
+	perspective: 400px;  perspective-origin: 60% 60%;
+}
+
+.cube {
+	width: inherit;
+	height: inherit;
+	transform-style: preserve-3d; box-shadow: 
+}
+
+.side {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border: 3px solid #fff;
+	text-align: center;
+	color: #fff;
+}
+
+.front {
+	transform: translateZ(150px);
+
+	
+
+}
+
+.back {
+	transform: rotateY(180deg) translateZ(150px);
+}
+
+.right {
+	transform: rotateY(90deg) translateZ(150px);
+}
+
+.left {
+	transform: rotateY(-90deg) translateZ(150px);
+}
+
+.top {
+	transform: rotateX(90deg) translateZ(150px);
+}
+
+.bottom {
+	transform: rotateX(-90deg) translateZ(150px);
+}
+
+
+
+body:hover .cube{
+  transform:rotateY(405deg) rotateX(660deg)   rotateZ(360deg);
+  transform-origin: 10% 90%;
+  transition-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  backface-visibility: hidden;transition-delay: .5s;box-shadow: 8px;  
+}
