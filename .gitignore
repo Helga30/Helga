@@ -4,3 +4,18 @@
 # Ada Library Information
 *.ali
 index.html
+
+$ cat .gitignore
+
+*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
